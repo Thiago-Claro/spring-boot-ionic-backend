@@ -5,10 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Service;
 
-import com.thigas.cursomc.CursomcApplication;
 import com.thigas.cursomc.domain.Categoria;
 import com.thigas.cursomc.domain.Cidade;
 import com.thigas.cursomc.domain.Cliente;
@@ -61,10 +59,6 @@ public class DBService {
 	
 	@Autowired
 	private ItemPedidoRepository itemPedidoRepository;
-	
-	public static void main(String[] args) {
-		SpringApplication.run(CursomcApplication.class, args);
-	}
 	
 	public void instantiateDatabase() throws ParseException {
 		
